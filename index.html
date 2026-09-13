@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Project Jovian — Four Moons. One Civilization.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="space"></canvas>
+<header class="topbar">
+  <a class="brand" href="#home">PROJECT <span>JOVIAN</span></a>
+  <nav>
+    <a href="#home">Home</a><a href="#system">Jovian System</a>
+    <a href="#io">Io</a><a href="#callisto">Callisto</a>
+    <a href="#ganymede">Ganymede</a><a href="#europa">Europa</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">HUMANITY'S MULTI-MOON STRATEGY</p>
+    <h1>Four Moons.<br><span>One Civilization.</span></h1>
+    <p class="lead">A systems-level concept for energy, research, industry, resources and human settlement across the Jovian system.</p>
+    <div class="buttons"><a class="btn primary" href="#system">Enter the system</a><a class="btn" href="#architecture">View architecture</a></div>
+  </div>
+  <div class="jupiter-wrap">
+    <div class="jupiter" aria-label="Animated Jupiter"></div>
+    <div class="orbit o1"></div><div class="orbit o2"></div>
+    <div class="moon m-io" data-name="Io"></div><div class="moon m-eu" data-name="Europa"></div>
+    <div class="moon m-ga" data-name="Ganymede"></div><div class="moon m-ca" data-name="Callisto"></div>
+    <div class="jlabel">JUPITER</div>
+  </div>
+</section>
+
+<section id="system" class="section">
+  <div class="section-head"><p class="eyebrow">SYSTEM MAP</p><h2>The Jovian Network</h2><p>Each moon has a specialized role. Click a node to explore it.</p></div>
+  <div class="system-card">
+    <div class="network">
+      <div class="node node-io" onclick="go('io')"><b>⚡ IO</b><small>ENERGY</small></div>
+      <div class="node node-ca" onclick="go('callisto')"><b>🔬 CALLISTO</b><small>RESEARCH</small></div>
+      <div class="node node-ga" onclick="go('ganymede')"><b>🏭 GANYMEDE</b><small>INDUSTRY</small></div>
+      <div class="node node-eu" onclick="go('europa')"><b>🏠 EUROPA</b><small>RESIDENCE</small></div>
+      <div class="core">JOVIAN<br><span>HUB</span></div>
+      <div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="line l4"></div>
+    </div>
+  </div>
+</section>
+
+<section id="architecture" class="section">
+  <div class="section-head"><p class="eyebrow">ARCHITECTURE</p><h2>One system, four functions</h2></div>
+  <div class="cards">
+    <article class="card" onclick="go('io')"><span class="icon">⚡</span><h3>Io / Energy</h3><p>Investigate electrodynamic tether systems interacting with Jupiter's magnetic field and the Io plasma environment.</p><span class="link">Explore →</span></article>
+    <article class="card" onclick="go('callisto')"><span class="icon">🔬</span><h3>Callisto / Research</h3><p>A lower-radiation outer-moon base for geology, astrobiology, communications and deep-space operations.</p><span class="link">Explore →</span></article>
+    <article class="card" onclick="go('ganymede')"><span class="icon">🏭</span><h3>Ganymede / Industry</h3><p>Water, propellant, manufacturing, agriculture and logistics form the industrial backbone.</p><span class="link">Explore →</span></article>
+    <article class="card" onclick="go('europa')"><span class="icon">🏠</span><h3>Europa / Residence</h3><p>Heavily shielded habitats support people while scientists investigate its subsurface ocean.</p><span class="link">Explore →</span></article>
+  </div>
+</section>
+
+<section id="io" class="section moon-page">
+  <div class="moon-hero"><div class="planet io-planet"></div><div><p class="eyebrow">01 / ENERGY MOON</p><h2>IO</h2><p class="lead">The volcanic powerhouse of the Jovian system.</p></div></div>
+  <div class="grid2">
+    <div class="panel"><h3>Why Io matters</h3><ul><li>Extreme tidal heating drives intense volcanic activity.</li><li>Io moves through Jupiter's powerful magnetic environment.</li><li>Volcanic material feeds the Io plasma torus.</li><li>Its electromagnetic environment makes it interesting for power-generation research.</li></ul></div>
+    <div class="panel"><h3>Energy pathway</h3><div class="flow"><b>Plasma environment</b><i>↓</i><b>Conducting tether</b><i>↓</i><b>Induced DC</b><i>↓</i><b>Power conditioning</b><i>↓</i><b>Beam / local use</b></div></div>
+  </div>
+  <div class="science-note"><b>⚠ SCIENCE NOTE</b><p>An electrodynamic tether is a proposed technology. The voltage and available extractable power depend strongly on tether length, orbit, conductivity, plasma conditions and circuit design; Io should not be treated as a simple battery.</p></div>
+</section>
+
+<section id="callisto" class="section moon-page">
+  <div class="moon-hero"><div class="planet callisto-planet"></div><div><p class="eyebrow">02 / RESEARCH MOON</p><h2>CALLISTO</h2><p class="lead">The outer-system laboratory and staging ground.</p></div></div>
+  <div class="grid2">
+    <div class="panel"><h3>Research priorities</h3><ul><li>Study ancient cratered terrain and primordial material.</li><li>Investigate the subsurface ocean with robotic instruments.</li><li>Develop long-duration human research operations.</li><li>Support communications and missions beyond Jupiter.</li></ul></div>
+    <div class="panel"><h3>Deployment phases</h3><div class="timeline"><b>01 — Reconnaissance</b><span>Orbital mapping + robotic scouting</span><b>02 — Infrastructure</b><span>Autonomous habitats + power systems</span><b>03 — Crewed science</b><span>Researchers + continuous telemetry</span></div></div>
+  </div>
+</section>
+
+<section id="ganymede" class="section moon-page">
+  <div class="moon-hero"><div class="planet ganymede-planet"></div><div><p class="eyebrow">03 / INDUSTRIAL MOON</p><h2>GANYMEDE</h2><p class="lead">The proposed industrial and logistics capital.</p></div></div>
+  <div class="grid2">
+    <div class="panel"><h3>Resource chain</h3><div class="flow"><b>Ice + regolith</b><i>↓</i><b>Extraction</b><i>↓</i><b>Water / oxygen / hydrogen</b><i>↓</i><b>Fuel + manufacturing</b><i>↓</i><b>System-wide logistics</b></div></div>
+    <div class="panel"><h3>Industrial pillars</h3><ul><li>Water and propellant processing</li><li>Silicate and mineral processing</li><li>In-space manufacturing</li><li>Protected hydroponic agriculture</li><li>Robotic resource logistics</li></ul></div>
+  </div>
+  <div class="science-note"><b>DESIGN PRINCIPLE</b><p>Use local resources wherever practical so settlement growth does not require every kilogram to arrive from Earth.</p></div>
+</section>
+
+<section id="europa" class="section moon-page">
+  <div class="moon-hero"><div class="planet europa-planet"></div><div><p class="eyebrow">04 / RESIDENTIAL MOON</p><h2>EUROPA</h2><p class="lead">A shielded human outpost beside a world-ocean.</p></div></div>
+  <div class="grid2">
+    <div class="panel"><h3>Why Europa is scientifically important</h3><ul><li>A global subsurface ocean is thought to exist beneath the ice.</li><li>Tidal heating can supply internal energy.</li><li>Rock–water interactions may provide useful chemistry.</li><li>The ice provides substantial shielding when habitats are placed beneath it.</li></ul></div>
+    <div class="panel"><h3>Residence concept</h3><div class="habitat"><div class="ice"></div><div class="hab"><span>HAB</span></div><div class="ocean">SUBSURFACE OCEAN</div></div></div>
+  </div>
+  <div class="science-note"><b>⚠ HABITATION NOTE</b><p>Europa's surface is a severe radiation environment. This concept therefore favors heavily shielded or subsurface habitats rather than exposed surface cities.</p></div>
+</section>
+
+<section class="section">
+ <div class="section-head"><p class="eyebrow">ROADMAP</p><h2>From robots to civilization</h2></div>
+ <div class="roadmap"><div><b>01</b><span>Robotic reconnaissance</span></div><div><b>02</b><span>Power + communications</span></div><div><b>03</b><span>Autonomous construction</span></div><div><b>04</b><span>First crews</span></div><div><b>05</b><span>Local industry</span></div><div><b>06</b><span>Self-sustaining network</span></div></div>
+</section>
+
+<section class="section sources">
+ <div class="section-head"><p class="eyebrow">RESEARCH MODE</p><h2>Science status</h2></div>
+ <div class="status-grid"><div><b>● ESTABLISHED</b><p>Observed geology, orbital dynamics, magnetospheres, ice-rich moons and spacecraft measurements.</p></div><div><b>● PROPOSED</b><p>Electrodynamic power systems, autonomous industrial bases, large-scale ISRU and beamed power.</p></div><div><b>● SPECULATIVE</b><p>Large permanent populations, massive energy export and mature Jovian inter-moon economies.</p></div></div>
+ <p class="footer-note">Project Jovian is a conceptual research and design project. Values and engineering claims should be checked against current NASA/ESA mission data before formal publication.</p>
+</section>
+</main>
+<footer><b>PROJECT JOVIAN</b><span>Four Moons. One Civilization.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
